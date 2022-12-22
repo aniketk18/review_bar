@@ -1,0 +1,100 @@
+*{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    background-color: whitesmoke;
+}
+h1{
+    text-align: center;
+    font-size: 40px;
+}
+h1::after{
+    content: " ";
+    display: block;
+    border-bottom: 4px solid skyblue;
+    position: relative;
+    left: 47%;
+    width: 70px;
+}
+main{
+    display: grid;
+    text-align: center;
+    place-items: center;
+    height: 30rem;
+    /* border: 2px solid blue; */
+}
+
+section{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    height: 25rem;
+    width: 40%;
+    /* row-gap: 10px; */
+    justify-content: space-evenly;
+    /* border: 2px solid black; */
+    border-radius: 20px;
+}
+
+.myimg{
+    /* margin: 0; */
+    position: relative;
+    width: 120px;
+    height: 120px;
+    left: 40%;
+    border-radius: 50%;
+    box-shadow: 5px -3px 0px 2px lightblue;
+}
+#myimage{
+    width: 100%;
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative;
+}
+
+.name{
+    font-size: 25px;
+    font-weight: 530;
+    letter-spacing: 0.2pc;
+}
+
+.position{
+    color:darkturquoise;
+    font-size: 20px;
+    font-weight: 540;
+}
+
+.previous,.next{
+    background: transparent;
+    border: none;
+    font-size: 30px;
+    font-weight: 900;
+    cursor: pointer;
+    color: steelblue;
+}
+.previous:hover,.next:hover{
+    color: lightslategray;
+}
+
+.btn-supriseme{
+    background: transparent;
+    border: 2px solid lightseagreen;
+    border-radius: 5px;
+    box-shadow: 3px 3px lightblue;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn-supriseme:hover{
+    transition: 0.5s;
+    color: white;
+    background-color: lightseagreen;
+}
+
+.btn-supriseme:active{
+    box-shadow: -2px -2px  lightblue;
+}
